@@ -61,13 +61,16 @@ def select_provider() -> str:
     print("\n--- CHỌN NHÀ CUNG CẤP AI (AI PROVIDER) ---")
     print(" [1] Gemini (Mặc định - Khuyên dùng dịch văn học & tiểu thuyết dài)")
     print(" [2] DeepSeek (DeepSeek-Chat)")
-    print(" [3] Grok / OpenAI / OpenRouter")
+    print(" [3] Grok / xAI")
+    print(" [4] OpenRouter (Đa dạng model: Claude, GPT-4o, DeepSeek, Gemini...)")
     
     choice = input("\nNhập số (Mặc định: 1): ").strip()
     if choice == "2":
         return "deepseek"
     elif choice == "3":
         return "grok"
+    elif choice == "4":
+        return "openrouter"
     return "gemini"
 
 

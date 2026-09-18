@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-16T11:29:51.252705",
+  "updated_at": "2026-09-18T10:29:20.587915",
   "genre": "tien_hiep",
   "scanned_chapters": [
-    "chap1.txt",
-    "chap5.txt",
-    "chap4.txt",
     "chap2.txt",
-    "chap3.txt"
+    "chap1.txt",
+    "chap3.txt",
+    "chap5.txt",
+    "chap4.txt"
   ],
   "context_diagram": "Dựa trên đoạn văn bạn cung cấp, nhân vật \"Kẻ tấn công bí ẩn\" đã được xác định danh tính là **Shiron**.\n\n### 1. Phân tích nhân vật\n*   **Shiron:** Trước đây đã xuất hiện trong sơ đồ với vai trò \"Khách hàng/Gây áp lực\" đối với Smith. Tuy nhiên, trong đoạn văn này, cô ấy chính là người đã hạ gục nữ sơn tặc và đang trực tiếp đối mặt với Smith.\n*   **Mối quan hệ:**\n    *   **Shiron ↔ Third Bandit Woman:** Kẻ tấn công - Nạn nhân (Shiron đã hạ gục cô ta).\n    *   **Shiron ↔ Smith:** Mối quan hệ căng thẳng, bạo lực (Shiron túm tóc Smith, thể hiện sự giận dữ và oán trách).\n\n### 2. SƠ ĐỒ QUAN HỆ CẬP NHẬT\n\n```mermaid\ngraph TD\n    Smith[Seo Minsu/Smith] -- \"Bị bóc lột/Ghen ghét\" --> NamTiepTan[Hai nam tiếp tân - Susu-kkang A & B]\n    Smith -- \"Được bảo vệ/Có thiện cảm\" --> Amela[Amela]\n    Smith -- \"Được cung cấp vật phẩm/Bảo trợ\" --> Vizelin[Vizelin]\n    Vizelin -- \"Chủ\" --> Shiorin[Shiorin]\n    Smith -- \"Được giúp đỡ/Có thiện cảm\" --> GuardCaptain[Đội trưởng Vệ binh]\n    Dahlia -- \"Kẻ phản bội/Bắt cóc\" --> Smith\n    ThuLinh -- \"Chỉ đạo\" --> Dahlia\n    Shiron -- \"Khách hàng/Gây áp lực\" --> Smith\n    Shiron -- \"Tấn công/Hạ gục\" --> ThirdBandit\n    Shiron -- \"Túm tóc/Đe dọa\" --> Smith\n    Smith -- \"Kỷ niệm/Trải nghiệm quá khứ\" --> Jina[Auntie Jina]\n    BranchManager[Branch Manager] -- \"Mua/Giáo dục/Quản lý\" --> Smith\n    Shiorin -- \"Trợ lý/Người quen\" --> Vizelin\n    Dahlia -- \"Đồng hành/Lừa lọc\" --> Adventurers[Nhóm mạo hiểm giả]\n    Smith -- \"Giao thư/Khách hàng\" --> Coachman[Nữ đánh xe]\n    Coachman -- \"Người vận chuyển\" --> Adventurers\n    MollingtaMen[Đàn ông từ Mollingta] -- \"Đối tượng so sánh\" --> Dahlia\n    \n    %% Bổ sung nhân vật cũ\n    PiercingEyedWoman[Piercing-Eyed Woman - Boss] -- \"Chỉ đạo\" --> Dahlia\n    PiercingEyedWoman -- \"Bắt giữ/Coi là hàng hóa\" --> Smith\n    Bandits[Hai nữ sơn tặc bị hạ] -- \"Thuộc hạ\" --> PiercingEyedWoman\n    Bandits -- \"Canh giữ/Cho ăn\" --> Smith\n    DarkBlondeBandit[Dark Blonde Bandit Woman] -- \"Thuộc hạ\" --> PiercingEyedWoman\n    DarkBlondeBandit -- \"Quấy rối/Canh giữ\" --> Smith\n    \n    %% Nhân vật mới\n    ThirdBandit[Third Bandit Woman] -- \"Thuộc hạ\" --> PiercingEyedWoman\n    ThirdBandit -- \"Phát hiện/Áp giải\" --> Smith\n    Lookout[Lookout - Sơn tặc trên cây] -- \"Thuộc hạ\" --> PiercingEyedWoman\n    Lookout -- \"Cảnh giới/Giám sát\" --> Smith\n    Lookout -- \"Đồng bọn\" --> ThirdBandit\n```\n\n**Bảng đối chiếu quan hệ bổ sung:**\n*   **Shiron ↔ Third Bandit Woman:** Kẻ tấn công - Nạn nhân (Shiron hạ gục cô ta).\n*   **Shiron ↔ Smith:** Đối đầu trực tiếp (Shiron đang giận dữ và đe dọa Smith)."
 }

@@ -67,7 +67,21 @@ class StoryTranslator:
             self.base_url = base_url or os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
             self.model_name = model_name or os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
             self.client = OpenAI(api_key=self.api_key, base_url=self.base_url, timeout=120.0) if self.api_key else None
-        elif self.provider in ["grok", "openai", "openrouter"]:
+        elif self.provider == "openrouter":
+            self.api_key = api_key or os.getenv("OPENROUTER_API_KEY", "")
+            self.base_url = base_url or os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")
+            self.model_name = model_name or os.getenv("OPENROUTER_MODEL", "deepseek/deepseek-chat")
+            default_headers = {
+                "HTTP-Referer": "https://github.com/Donut4055/truyen",
+                "X-Title": "Novel Translator"
+            }
+            self.client = OpenAI(
+                api_key=self.api_key,
+                base_url=self.base_url,
+                default_headers=default_headers,
+                timeout=120.0
+            ) if self.api_key else None
+        elif self.provider in ["grok", "openai"]:
             self.api_key = api_key or os.getenv("GROK_API_KEY", "")
             self.base_url = base_url or os.getenv("GROK_BASE_URL", "https://api.x.ai/v1")
             self.model_name = model_name or os.getenv("GROK_MODEL", "grok-beta")

@@ -37,20 +37,42 @@ Công cụ dịch truyện, tiểu thuyết, Webnovel, Light Novel, Manga, Manhw
 
 ---
 
-## 🚀 Hướng Dẫn Sử Dụng
+## 🚀 Hướng Dẫn Cài Đặt & Sử Dụng
 
-### Cách 1: Chạy 1-Click trên Windows
-Nhấp đúp chuột vào file:
-👉 `run_dich_truyen.bat`
-
-### Cách 2: Chạy từ Terminal / Command Line
+### Bước 1: Cài đặt các thư viện cần thiết
 ```powershell
-# Chuyển vào thư mục dịch truyện
-cd "dịch truyện"
-
-# Chạy giao diện tương tác CLI
-python cli.py
+pip install -r requirements.txt
 ```
+
+### Bước 2: Tạo file cấu hình `.env` từ file mẫu `.env.example`
+Chạy lệnh tạo file `.env` theo hệ điều hành của bạn:
+
+- **Windows PowerShell**:
+  ```powershell
+  Copy-Item .env.example .env
+  ```
+- **Windows Command Prompt (CMD)**:
+  ```cmd
+  copy .env.example .env
+  ```
+- **Linux / macOS**:
+  ```bash
+  cp .env.example .env
+  ```
+
+> Mở file `.env` vừa tạo và điền API Key của bạn (`DEEPSEEK_API_KEY`, `GEMINI_API_KEY` hoặc `GROK_API_KEY`).
+
+---
+
+### Bước 3: Khởi chạy công cụ
+
+- **Cách 1 (Windows 1-Click)**: Nhấp đúp vào file 👉 run_dich_truyen.bat
+- **Cách 2 (Terminal / Command Line)**:
+  ```powershell
+  python cli.py
+  ```
+
+---
 
 ### Các Chế Độ Dịch:
 1. **Dịch trực tiếp**: Dán đoạn văn bản thô bất kỳ và nhận kết quả tức thì.
